@@ -14,4 +14,9 @@ function closeModal(){
 openModal.addEventListener('click', startModal)
 exitModal.addEventListener('click', closeModal)
 
-setTimeout(startModal, 7000)
+let audio = document.getElementById("beeper")
+
+let navItem = document.getElementById("nav1")
+
+navItem.addEventListener('mouseover', play(audio))
+
