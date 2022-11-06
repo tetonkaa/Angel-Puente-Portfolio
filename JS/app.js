@@ -1,4 +1,4 @@
-console.log("test")
+
 const openModal = document.getElementById('modalOn')
 
 const modal = document.getElementById('modal')
@@ -14,9 +14,38 @@ function closeModal(){
 openModal.addEventListener('click', startModal)
 exitModal.addEventListener('click', closeModal)
 
-let audio = document.getElementById("beeper")
 
-let navItem = document.getElementById("nav1")
+// const wallpapers = document.getElementbyId("background")
+const slideBtn= document.getElementById("slideshow")
 
-navItem.addEventListener('mouseover', play(audio))
 
+function wpchange(){
+    document.getElementById("background").src = "images/16bitearth.png";
+    document.getElementById("background").src = "images/dinomouth.jpg";
+}
+
+slideBtn.addEventListener('click',wpchange)
+
+
+let nameBtn = document.getElementById("title")
+
+function colorChange(){
+    document.getElementById("title").style.color = "red"
+}
+
+nameBtn.addEventListener('click', colorChange)
+
+ 
+
+let playBtn = document.getElementById("songs")
+
+function changeTrack(){
+
+    let currentSong = document.getElementById("track")
+    currentSong.pause();
+    currentSong.src = "../sounds/pcsleep.mp3";
+    currentSong.play();
+    
+}
+
+playBtn.addEventListener('click', changeTrack)
