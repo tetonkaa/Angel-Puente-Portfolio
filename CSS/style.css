@@ -1,18 +1,48 @@
  /* * {
     border: 2px dotted rgb(255, 238, 7);
 }  */
-/* @media (min-width: 500px){
+@media (max-width: 599px){
     body{
         display: flex;
-        justify-content
-    } */
+        flex-direction: column;
+    }
+    header{
+        font-family: 'Orbitron', sans-serif;
+        border: dashed rgb(0,0,0 ) 2px;
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0px -5px 20px 1px rgb(255, 253, 157);
+        font-size: 32px;
+        margin: 40px;
+
+        
+        
+        
+    }
+    .navigation {
+        font-family: 'Orbitron', sans-serif;
+        height: 200px;
+        width: 150px;
+        padding: 1px 1px;
+        float: left;
+        display: flex;
+        flex-direction: row;
+        justify-content:;
+        position:sticky;
+        font-size: 1em;
+        margin-left: 20px;
+        margin-top: 220px;
+        padding-right: 20px;
+    
+    }
+}
     
 
 body{
     color: rgb(236, 236, 236);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5em;
-    cursor: url('images/tree.png'), auto;
+    cursor: url('/images/tree.png'), auto;
     
     
 }
@@ -30,8 +60,6 @@ body{
 }
 .container {
     display: inline;
-    
-    
     
 }
 
@@ -104,15 +132,16 @@ li{
 }
 #songs:hover {
     color: rgb(255, 105, 105);
-    cursor: url('images/tree.png'), auto;
+    cursor: url('/images/tree.png'), auto;
 }
 #slideshow:hover {
     color: rgb(255, 105, 105);
-    cursor: url('images/tree.png'), auto;
+    cursor: url('/images/tree.png'), auto;
 }
 a:link {
     text-decoration: none; 
     color:white;
+    
 }
 a:visited {
     color: white;
@@ -122,7 +151,7 @@ a:active{
 }
 a:hover {
     color: rgb(255, 105, 105);
-    cursor: url('images/tree.png'), auto;
+    cursor: url('/images/tree.png'), auto;
 }
 
 #modalOn:hover {
@@ -153,6 +182,7 @@ button:hover {
     border: groove rgb(255, 253, 157);
     justify-content: center;
     padding: 250px 50px;
+    animation: innerGlow 7s linear infinite;
     
 }
 #modaltextbox {
@@ -169,23 +199,25 @@ button:hover {
     flex-wrap: wrap;
     width: 70%x;
     float:center;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-left: 10%;
-    box-shadow: 0px -5px 20px 1px rgb(255, 253, 157);
+    /* box-shadow: 0px -5px 20px 1px rgb(255, 253, 157); */
+    animation:  glow 7s linear infinite;
     
 
 }
 
 .main p {
-    padding: 300px 10px;
-       
+    padding: 150px 100px;
+    font-size: 1.5em
+    
 }
 
 .language {
     max-height: 100px;
     padding-left: 300px;
     filter: blur(2px);
-    animation:  movement 7s linear infinite;    
+    animation:  movement 4s linear infinite;    
     
 }
 @keyframes movement {
@@ -209,19 +241,67 @@ button:hover {
    }
     60%{
         padding-left: 500px;
-        transform: rotate(-1deg);
+        transform: rotate(-2deg);
    }
     75%{
-        padding-left: 700px;
+        padding-left: 600px;
         transform: rotate(3deg);
    }
         
     100%{
-        padding-left: 800px;
+        padding-left: 650px;
         opacity: 0%;
    }
     
 }
+@keyframes glow{
+    0% {
+        box-shadow: 0px -5px 0px 1px rgb(255, 253, 157);
+    }
+    10%{
+        box-shadow: 0px -5px 20px 1px rgb(255, 253, 157);
+   }
+    25%{
+        box-shadow: 0px -5px 50px 10px rgb(255, 253, 157);
+   }
+    45%{
+        box-shadow: 0px -5px 75px 1px rgb(255, 253, 157);
+   }
+    60%{
+        box-shadow: 0px -5px 100px 1px rgb(255, 252, 59);
+   }
+    75%{
+        box-shadow: 0px -5px 75px 1px rgb(255, 253, 157);
+   }
+    100%{ 
+        box-shadow: 0px -5px 50 px 1px rgb(255, 253, 157);
+   }
+}
+
+@keyframes innerGlow{
+    0% {
+        box-shadow: inset 0px -5px 0px 1px rgb(255, 253, 157);
+    }
+    10%{
+        box-shadow:  inset 0px -5px 20px 1px rgb(255, 253, 157);
+   }
+    25%{
+        box-shadow: inset 0px -5px 50px 10px rgb(255, 253, 157);
+   }
+    45%{
+        box-shadow: inset 0px -5px 75px 1px rgb(255, 253, 157);
+   }
+    60%{
+        box-shadow: inset 0px -5px 100px 1px rgb(255, 252, 59);
+   }
+    75%{
+        box-shadow: inset 0px -5px 75px 1px rgb(255, 253, 157);
+   }
+    100%{ 
+        box-shadow: inset 0px -5px 50 px 1px rgb(255, 253, 157);
+   }
+}
+
 
 
 @media (max-width: 499px) {

@@ -20,20 +20,15 @@ const slideBtn= document.getElementById("slideshow")
 
 
 function wpchange(){
-    document.getElementById("background").src = "images/16bitearth.png";
+        document.getElementById("background").src = "images/16bitearth.png";
     document.getElementById("background").src = "images/dinomouth.jpg";
+    
+    
 }
 
 slideBtn.addEventListener('click',wpchange)
 
 
-let nameBtn = document.getElementById("title")
-
-function colorChange(){
-    document.getElementById("title").style.color = "red"
-}
-
-nameBtn.addEventListener('click', colorChange)
 
  
 
@@ -43,7 +38,7 @@ function changeTrack(){
 
     let currentSong = document.getElementById("track")
     currentSong.pause();
-    currentSong.src = "../sounds/pcsleep.mp3";
+    currentSong.src = "/sounds/njab.mp3";
     currentSong.play();
     
 }
