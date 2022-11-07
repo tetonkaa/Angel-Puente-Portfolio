@@ -36,10 +36,10 @@ let playBtn = document.getElementById("songs")
 
 function changeTrack(){
 
-    let currentSong = document.getElementById("track")
+    let currentSong = document.getElementById("track");
     currentSong.pause();
-    currentSong.src = "../sounds/njab.mp3";
-    currentSong.play();
+    let secondSong = document.getElementById("track2");
+    secondSong.play();
     
 }
 
