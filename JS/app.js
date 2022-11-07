@@ -38,7 +38,7 @@ function changeTrack(){
 
     let currentSong = document.getElementById("track")
     currentSong.pause();
-    currentSong.src = "sounds/njab.mp3";
+    currentSong.src = "Angel-Puente-Portfolio/sounds/njab.mp3";
     currentSong.play();
     
 }
