@@ -3,6 +3,7 @@
 ![image](https://user-images.githubusercontent.com/100241450/200902055-93f4ff41-48b3-4d65-9fb4-058dcf354016.png)
 Technologies used:
 HTML, CSS, Animation,  Javascript, DOM manipulation. 
+
  Wireframe:
 ![image](https://user-images.githubusercontent.com/100241450/200947691-7264af25-e6ff-4c39-84ea-440273351f4b.png)
 
